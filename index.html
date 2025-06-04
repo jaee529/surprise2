@@ -26,26 +26,14 @@
     var password = prompt("اكتب كلمة السر:");
     if (password !== "#7959#") {
       alert("كلمة السر غلط!");
-      window.location.href = "https://google.com"; // يوديه لمكان تاني لو غلط
+      window.location.href = "https://google.com"; 
     }
   </script>
   <h1>Wait, my friend</h1>
   <p>The surprise is at 12am</p>
 
   <script>
-    function checkTime() {
-      const now = new Date(); // الوقت الحالي الحقيقي
-      const target = new Date("2025-06-5T00:00:00"); // الموعد اللي عايز تفتح فيه الصفحة
-  
-      if (now >= target) {
-        window.location.href = "birthda.html"; // يفتح الصفحة التانية
-      } else {
-        setTimeout(checkTime, 10000); // كل 10 ثواني
-      }
-    }
-  
-    checkTime();
-
+        window.location.href = "birthda.html"; 
   </script> 
 </body>
 </html>
