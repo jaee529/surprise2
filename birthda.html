@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday</title>
+  <style>
+    html, body {
+  height: auto;
+  overflow: auto;
+}
+    body {
+      background: hsl(333, 28%, 92%);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 22px;
+      margin: 20px 0;
+    }
+
+    .balloons {
+      font-size: 50px;
+    }
+  </style>
+ 
+ 
+</head>
+<body>
+  
+  <div class="balloons">🎈🎉🎈</div>
+  <h1>Happy Brithday Nemo</h1>
+  <div style="display: flex; gap: 15px;">
+        <img src="image 1.jpg" style="width: 200px;height: 200px;rotate: deg;">            
+         <img src="image 2.jpg" style="width: 200px;height: 200px;">
+         <img src="image 3.jpg" style="width: 200px;height: 200px;">
+         <img src="image 4.jpg" style="width: 200px;height: 200px;">
+         <img src="image 5.jpg" style="width: 200px;height: 200px;">
+         <img src="image 6.jpg" style="width: 200px;height: 200px;">
+   
+
+
+  </div>
+      <p style="max-width: 600px; font-size: 20px; line-height: 1.8;">
+      النهارده مش يوم عادي...  
+      النهارده يوم انولد فيه شخص مميز، طيب، وبيضحك دايمًا من قلبه،  
+      شخص وجوده بيفرق، وصوته بيريّح، وروحه دايمًا خفيفة!  
+      
+      عقبال مليون سنة سعيدة ونجاح  
+      ويارب كل اللي بتتمنيه يبقى حقيقة وكل باب خير يتفتحلك من غير ما تطلبي 
+      
+      أنا مش هكتب كلام محفوظ، بس فعلاً انتي من الناس اللي تستاهل كل حاجة حلوة في الدنيا  
+       خلي يومك ده كله فرحة، ضحك، وهدايا كتير ومتشغليش بالك بأي حاجة تضايقك 
+      
+      Happy Birthday 
+    </p>
+  <div class="balloons">🎈🎂🎈</div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عيد ميلاد سعيد!</title>
+  <style>
+     html, body {
+  height: auto;
+  overflow: auto;
+}
+    body {
+      background: radial-gradient(circle, #ff8a8a, #ff4f81, #ff0055);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Tahoma', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      position: absolute;
+      color: #e70505;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-1000px) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <audio id="bgMusic">
+    <source src="birthday.mp3" type="audio/mp3">
+  </audio>
+  
+  <button style="
+  background-color: #ff69b4;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(214, 15, 41);
+  transition: 0.3s ease;
+" onclick="playMusic()">Play </button>
+  
+  <script>
+    function playMusic() {
+      const audio = document.getElementById("bgMusic");
+      audio.play().catch(err => {
+        console.log("الصوت لم يشتغل تلقائيًا:", err);
+      });
+    }
+  </script>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = "100vh";
+      heart.style.fontSize = Math.random() * 30 + 20 + "px";
+      heart.innerHTML = "❤🥳";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
